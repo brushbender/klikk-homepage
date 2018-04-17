@@ -7,14 +7,79 @@ body {
     background-image: linear-gradient(#1E1E42, #1E1E42);
 }
 
+/* ---------------------- COLORS -------------------------- */
+
+.bg-primary {
+	background: #E40571!important;
+}
+.bg-secondary {
+	background: #c3d9e0!important;
+}
+.bg-success {
+	background: #9B8F5D!important;
+}
+.bg-danger {
+	background: #D72E3D!important;
+}
+.bg-warning {
+	background: #ffce00!important;
+}
+.bg-info {
+	background: #7997AD!important;
+}
+.bg-light {
+	background:	#BBD4DC!important;
+}
+.bg-dark {
+	background:	#1F2026!important;
+}
+.bg-white {
+	background:	#ffffff!important;
+}
 
 
+
+.text-primary {
+	color: #E40571!important;
+}
+.text-secondary	{
+	color: #c3d9e0!important;
+}
+.text-success {
+	color: #9B8F5D!important;
+}
+.text-danger {
+	color: #D72E3D!important;
+}
+.text-warning {
+	color: #ffce00!important;
+}
+.text-info {
+	color: #7997AD!important;
+}
+.text-light {
+	color: #ffffff!important;
+}
+.text-dark {
+	color: #333333!important;
+}
+.text-muted {
+	color: #E8EEF1!important;
+}
+.text-white {
+	color: #ffffff!important;
+}
 
 /* ---------------------- FONTS -------------------------- */
 
 p	{ 
 	font-family: "soleil",sans-serif;
-	font-weight: 400;
+	font-weight: 300;
+}
+
+a { 
+	font-family: "soleil",sans-serif;
+	font-weight: 300;
 }
 
 h1	{
@@ -26,13 +91,14 @@ h1	{
 
 /* ---------------------- LOGIN FORM -------------------------- */
 .card-container.card {
-    max-width: 350px;
+    max-width: 450px;
     padding: 40px 40px;
 }
 
 .btn {
-    font-weight: 700;
-    height: 36px;
+	background: #E40571!important;
+    font-weight: 300;
+    height: 61px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
@@ -43,13 +109,14 @@ h1	{
  * Card component
  */
 .card {
-    background-color: #F7F7F7;
+    background-color: #FFFFFF;
     padding: 20px 25px 30px;
     margin: 0 auto 25px;
     margin-top: 10%;
     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 0px;
 }
 
 .profile-img-card {
@@ -64,9 +131,8 @@ h1	{
  */
 .profile-name-card {
     font-size: 16px;
-    font-weight: bold;
     text-align: center;
-    margin: 10px 0 0;
+    margin: 10px 0 20px;
     min-height: 1em;
 }
 
@@ -111,6 +177,7 @@ select:-webkit-autofill:focus {
 	background-repeat: no-repeat; 
 	background-size: 17px 17px;
 	background-color: #fff;
+	margin-bottom:10px;
 }
 
 .form-signin input[type=password] {
@@ -126,13 +193,14 @@ select:-webkit-autofill:focus {
 .form-signin button {
     width: 100%;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     z-index: 1;
     position: relative;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     background-color: #fff;
+    border-radius:0px;
 }
 
 .form-signin .form-control:focus {
@@ -143,27 +211,27 @@ select:-webkit-autofill:focus {
 }
 
 .btn.btn-signin {
-    /*background-color: #4d90fe; */
-    background-color: rgb(104, 145, 162);
-    /* background-color: linear-gradient(rgb(104, 145, 162), rgb(12, 97, 33));*/
+	background: #E40571;
     padding: 0px;
-    font-weight: 700;
-    font-size: 14px;
-    height: 36px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
+    font-weight: 300;
+    font-size: 16px;
+    height: 55px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
     border: none;
     -o-transition: all 0.218s;
     -moz-transition: all 0.218s;
     -webkit-transition: all 0.218s;
     transition: all 0.218s;
+    padding: 15px;
 }
 
 .btn.btn-signin:hover,
 .btn.btn-signin:active,
 .btn.btn-signin:focus {
-    background-color: rgb(12, 97, 33);
+    background:#a30652!important;
+    
 }
 
 .forgot-password {
@@ -174,4 +242,16 @@ select:-webkit-autofill:focus {
 .forgot-password:active,
 .forgot-password:focus{
     color: rgb(12, 97, 33);
+}
+
+label {
+	font-weight: 300;
+	font-family: "soleil", sans-serif
+}
+
+
+.loggin-disclaimer {
+	width: 350px;
+	margin: auto;
+	padding: 0px 0px 0px 0px;
 }
