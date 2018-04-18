@@ -85,7 +85,15 @@ a {
 h1	{
   	font-family: "soleil",sans-serif;
   	font-weight: 600;
+  	font-size:36px;
 }
+
+h2	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 600;
+  	font-size:22px;
+}
+
 
 
 
@@ -202,6 +210,49 @@ select:-webkit-autofill:focus {
     background-color: #fff;
     border-radius:0px;
 }
+
+.customCheckbox {
+  float: left;
+  position: relative;  
+  width: 20px;
+  height: 20px;
+  background: #E40571;
+  border-radius: 2px;
+  border: 1px solid #d2d2d2;
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0.1);
+  margin-right: 5px;
+  overflow: hidden;
+}
+
+.customCheckbox.customCheckboxChecked {
+  background: #E40571;
+  border: 1px solid #60ACCC;
+}
+
+.customCheckbox input {
+  opacity: 0;
+  cursor: pointer;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.customCheckbox span {
+  display: none;
+  text-align: center;
+  line-height: 20px;
+  font-size: 90%;
+  color: #fff;
+}
+
+.customCheckbox.customCheckboxChecked span {
+  display: block;
+}
+
 
 .form-signin .form-control:focus {
     border-color: rgb(104, 145, 162);
