@@ -5,6 +5,14 @@ body {
 	height: 100%;
     background-repeat: no-repeat;
     background-image: linear-gradient(#1E1E42, #1E1E42);
+    padding-top: 65px;
+    
+}
+
+html {
+	min-height: 100%;
+	position: relative;
+	margin: 0;
 }
 
 /* ---------------------- COLORS -------------------------- */
@@ -35,6 +43,9 @@ body {
 }
 .bg-white {
 	background:	#ffffff!important;
+}
+.bg-grey {
+	background: #32343C!important;
 }
 
 
@@ -70,6 +81,52 @@ body {
 	color: #ffffff!important;
 }
 
+
+/* ----------------------- BUTTONS ------------------------- */
+.btn {
+	border-radius: 0px;
+	border: #E40571;
+}
+
+.btn:hover {
+  filter: brightness(85%);
+}
+
+.btn-primary {
+	background: #E40571!important;
+}
+.btn-secondary {
+	background: #c3d9e0!important;
+}
+.btn-success {
+	background: #9B8F5D!important;
+}
+.btn-danger {
+	background: #D72E3D!important;
+}
+.btn-warning {
+	background: #ffce00!important;
+}
+.btn-info {
+	background: #7997AD!important;
+}
+.btn-light {
+	background:	#BBD4DC!important;
+}
+.btn-dark {
+	background:	#1F2026!important;
+}
+.btn-white {
+	background:	#ffffff!important;
+}
+.btn-grey {
+	background: #32343C!important;
+}
+
+.btn-outline-light:hover, .btn-outline-light:focus, .btn-outline-light:active   {
+	color:#E40571!important;
+}
+
 /* ---------------------- FONTS -------------------------- */
 
 p	{ 
@@ -91,27 +148,180 @@ h1	{
 h2	{
   	font-family: "soleil",sans-serif;
   	font-weight: 600;
+  	font-size:28px;
+}
+
+h3	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
   	font-size:22px;
+}
+
+h4	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
+  	font-size:18px;
+}
+
+h5	{
+  	font-family: "soleil",sans-serif;
+  	font-weight: 300;
+  	font-size:14px;
 }
 
 
 
 
+
+/* ---------------------- STRUCTURE --------------------------- */
+
+section { 
+	display: block;
+}
+
+/* ---------------------- FRONTPAGE --------------------------- */
+
+section { 
+	display: block;
+}
+
+/* ---------------------- NAVBAR --------------------------- */
+.nav-item {
+	margin-right:15px;
+}
+
+.nav-item.active a.nav-link {
+	color: #d12368!important;
+}
+
+.btn-navbar {
+  display: block;
+  background-color: #d12368;
+  color: #fff;
+  padding: 0px 20px 0px 20px;
+}
+
+.btn-navbar:hover {
+  background-color: #ff0065;
+  color: #fff;
+}
+
+.btn-navbar:active {
+  background-color: #ff4e94;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+
+/* ---------------------- JUMBOTRON --------------------------- */
+.jumbotron { 
+	background: url("images/pattern_jumbotron.svg") no-repeat right bottom #1F2026!important;
+	background-size: 48%!important;
+	margin-bottom: 0px;
+}
+
+.lead {
+	line-height: 1.2em;
+}
+
+
+/* ---------------------- FEATURES --------------------------- */
+
+
+.features-icon {
+	display: inline-block;
+}
+
+.features-txt {
+	display: inline-block;
+}
+
+.features-link {
+	text-decoration: none;
+}
+
+a.features-link:hover {
+	color: #c3d9e0!important;
+	text-decoration: none;
+}
+
+
+/* ---------------------- PRICE --------------------------- */
+
+.slider-handle.round {
+    border-radius: 0;
+}
+
+.slider-handle {
+	border: solid 3px #E40571;
+    background: #E269A8;
+    top: -3px;
+}
+
+.slider.slider-horizontal {
+    width: 100%;
+    height: 20px;
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 5px;
+    width: 100%;
+    margin-top: -5px;
+    top: 50%;
+    left: 0;
+    border-radius: 0px;
+    background: #1F2026;
+}
+
+.slider-selection {
+	background: #E40571;
+    border-radius: 0px;
+}    
+
+
+#price-number {
+	font-size: 55px;
+}
+
+.price-form-wrapper {
+	display: block;
+}
+
+/* ---------------------- FOOTER --------------------------- */
+
+#footer {
+	display: block;
+	width: 100%;
+	height:auto;
+	overflow: visible;
+	background: #ffffff;	
+}
+
+ol.footer-list li {
+	list-style: none;
+}
+
+
 /* ---------------------- LOGIN FORM -------------------------- */
+
 .card-container.card {
     max-width: 450px;
     padding: 40px 40px;
 }
 
-.btn {
-	background: #E40571!important;
+.btn-navbar {
+	background: #E40571;
     font-weight: 300;
-    height: 61px;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
     cursor: default;
+    color:#fff;
+    opacity: 1;
 }
+
+
 
 /*
  * Card component
